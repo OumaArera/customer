@@ -38,7 +38,7 @@ Customer Management is a Django-based project designed to handle authentication,
 1. Clone the repository:
    ```bash
    git clone git@github.com:OumaArera/customer.git
-   cd customer-management
+   cd customer
    ```
 
 2. Create and activate a virtual environment:
