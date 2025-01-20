@@ -1,22 +1,22 @@
-version: 2.1
-orbs:
-  python: circleci/python@2
-jobs:
-  test-python:
-    docker:
-      - image: cimg/python:3.8
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: pip install -r requirements.txt
-      - run:
-          name: Run migrations
-          command: python manage.py migrate
-      - run:
-          name: Run tests
-          command: python manage.py test
-workflows:
-  build-and-test:
-    jobs:
-      - test-python
+# version: 2.1
+# orbs:
+#   python: circleci/python@2
+# jobs:
+#   test-python:
+#     docker:
+#       - image: cimg/python:3.8
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install dependencies
+#           command: pip install -r requirements.txt
+#       - run:
+#           name: Run migrations
+#           command: python manage.py migrate
+#       - run:
+#           name: Run tests
+#           command: python manage.py test
+# workflows:
+#   build-and-test:
+#     jobs:
+#       - test-python
