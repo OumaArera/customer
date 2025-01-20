@@ -33,10 +33,10 @@ AUTH0_CLIENT_SECRET = os.environ.get("AUTH0_CLIENT_SECRET")
 CALLBACK_URL = os.environ.get("CALLBACK_URL", "http://localhost:3000/callback")
 LOGOUT_URL = os.environ.get("LOGOUT_URL", "http://localhost:3000")
 
-SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
-JWT_ALGORITHM = os.environ.get('JWT_ALGORITHM')
-JWT_AUDIENCE = os.environ.get('JWT_AUDIENCE')
-JWT_ISSUER = os.environ.get('JWT_ISSUER')
+SECRET_KEY = os.environ.get('JWT_SECRET_KEY', "TEst")
+JWT_ALGORITHM = os.environ.get('JWT_ALGORITHM', "TEst")
+JWT_AUDIENCE = os.environ.get('JWT_AUDIENCE', "TEst")
+JWT_ISSUER = os.environ.get('JWT_ISSUER', "TEst")
 
 # SMS settings
 # SMS service credentials
